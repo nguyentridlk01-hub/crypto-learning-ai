@@ -1,9 +1,8 @@
 import streamlit as st
 
-st.title("Crypto Learning AI Agent")
-st.write("Ask about crypto or try the quiz!")
+st.title("Crypto Learning AI")
 
-user = st.text_input("You:")
+user = st.text_input("Ask about crypto or type 'quiz'")
 
 if user.lower() == "quiz":
     st.write("What does BTC stand for?")
@@ -17,6 +16,3 @@ if user.lower() == "quiz":
 
 elif user.lower() == "btc":
     st.info("BTC stands for Bitcoin, the first cryptocurrency.")
-
-elif user != "":
-    st.write("Try typing 'quiz' or 'btc'.")
